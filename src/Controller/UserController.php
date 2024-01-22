@@ -17,7 +17,6 @@ use  Symfony\Component\Security\Http\Event\InteractiveLoginEvent;
 use Doctrine\ORM\EntityManagerInterface;
 use App\Entity\User;
 
-//#[Route('/api/users')]
 class UserController extends AbstractController
 {
 
@@ -35,7 +34,7 @@ class UserController extends AbstractController
 
         // check if user was created previusly
         $userRepository = $this->entityManager->getRepository(User::class);
-        $existingUser = $userRepository->findOneBy(['email' => $userData['email']]);
+        $existingUser = $userRepository->findOneBy(['email' => $userData['username']]);
 
         if ($existingUser) {
             return $this->json(['error' => 'The user already exists.'], 400);
@@ -43,7 +42,7 @@ class UserController extends AbstractController
 
         // create a new user
         $user = new User();
-        $user->setEmail($userData['email']);
+        $user->setEmail($userData['username']);
 
         // set password
         $hashedPassword = $this->passwordHasher->hashPassword($user, $userData['password']);
@@ -59,40 +58,4 @@ class UserController extends AbstractController
         // response
         return $this->json(['message' => 'User created.']);      
     }
-
-
-    #[Route('/api/login', name: 'login_check' , methods:'POST')]
-    public function login(Request $request): JsonResponse
-    {
-        
-        //try {
-        
-            // convert to array for manipulation
-            $userData = $request->toArray();
-
-            // find user
-            $userRepository = $this->entityManager->getRepository(User::class);
-            $user = $userRepository->findOneBy(['email' => $userData['email']]);
-
-            // generate the token
-            //$token = $this->JWTManager->create($user);
-
-
-            // response
-            return $this->json(['token' => '$token']);
-
-            
-            //$jwt = $this->container->get('lexik_jwt_authentication.jwt_manager')->create($user);
-            //$authenticationSuccessHandler = $this->container->get('lexik_jwt_authentication.handler.authentication_success');
-            //return $authenticationSuccessHandler->handleAuthenticationSuccess($user, $jwt);
-            //return $authenticationSuccessHandler->handleAuthenticationSuccess($user);
-            
-        //} catch (\Exception $e) {
-            
-            //return new JsonResponse(['error' => 'Error creating token'], 500);
-        //}
-
-    }
-
-
 }
