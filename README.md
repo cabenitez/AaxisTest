@@ -3,6 +3,8 @@
 
 [Definitions](https://github.com/cabenitez/AaxisTest/blob/main/PDF-php-symfony-test-2023-en.pdf)
 
+### This project was developed with Symfony v7.0
+
 ### Requeriments 
 ```
 php: >=8.2
