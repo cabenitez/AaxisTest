@@ -3,8 +3,8 @@
 
 [Definitions](https://github.com/cabenitez/AaxisTest/blob/main/PDF-php-symfony-test-2023-en.pdf)
 
-### This project was developed with Symfony v7.0
 ![Symfony Logo](/public/images/symfony.png "Symfony Framework")
+This project was developed with Symfony v7.0
 
 ### Requeriments 
 ```
