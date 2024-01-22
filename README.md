@@ -45,4 +45,4 @@ postgresql: >= 13.11
 `/api/products/update`
 `/api/products/list`
 
-> To use the token add it to the Request Authorization as type "Bearer Token" Token
+> To use the token add it to the Request Authorization as type "Bearer Token"
