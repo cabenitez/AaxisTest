@@ -13,14 +13,14 @@ postgresql: >= 13.11
 ### Installation
 1. Clone this repository with `git clone https://github.com/cabenitez/AaxisTest.git`
 2. Enter to `AaxisTest` folder and execute `composer install` 
-3. Go to https://127.0.0.1:8000 for check if the platform are running
-4. Configure you database conection editing `.env` file, set your credentials in `DATABASE_URL` parameter
-5. Create database running `php bin/console doctrine:database:create`
-6. Create tables running `php bin/console doctrine:migrations:migrate` 
-7. Update Schema `php bin/console doctrine:schema:update --force`
-8. Generate your keypars with `php bin/console lexik:jwt:generate-keypair`
-9. Clear cache running `php bin/console cache:clear`
-10. Execute the server running `symfony serve` 
+3. Configure you database conection editing `.env` file, set your credentials in `DATABASE_URL` parameter
+4. Create database running `php bin/console doctrine:database:create`
+5. Create tables running `php bin/console doctrine:migrations:migrate` 
+6. Update Schema `php bin/console doctrine:schema:update --force`
+7. Generate your keypars with `php bin/console lexik:jwt:generate-keypair`
+8. Clear cache running `php bin/console cache:clear`
+9. Execute the server running `symfony serve` 
+10. Go to https://127.0.0.1:8000 for check if the platform are running
 
 ### Endpoints (import from Postman)
 
