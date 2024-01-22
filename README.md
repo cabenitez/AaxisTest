@@ -16,8 +16,8 @@ postgresql: >= 13.11
 5. Configure you database conection editing `.env` file, set your credentials in `DATABASE_URL` parameter
 6. Create database running `php bin/console doctrine:database:create`
 7. Create tables running `php bin/console doctrine:migrations:migrate` 
-8. Update Relations `php bin/console doctrine:schema:update --force`
-9. generate your own keypars with `php bin/console lexik:jwt:generate-keypair`
+8. Update Schema `php bin/console doctrine:schema:update --force`
+9. generate your keypars with `php bin/console lexik:jwt:generate-keypair`
 10. Clear cache running `php bin/console cache:clear`
  
 
