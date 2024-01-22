@@ -6,20 +6,20 @@
 php: >=8.2
 postgresql: >= 13.11
 ```
+> Enable `sodium` extension in you php.ini `extension=sodium`
 
 ### Installation
 1. Clone this repository with `git clone https://github.com/cabenitez/AaxisTest.git`
 2. Enter to `AaxisTest` folder and execute `composer install` 
-3. Configure you database conection editing `.env` file, set your credentials in `DATABASE_URL` parameter
-4. Create database running `php bin/console doctrine:database:create`
-5. Create tables running `php bin/console doctrine:migrations:migrate` 
-6. Update Relations `php bin/console doctrine:schema:update --force`
-7. Execute the server running `symfony serve`
-8. Go to https://127.0.0.1:8000 for check if the platform are running
-9. Enable `sodium` extension in you php.ini `extension=sodium`
-10. generate your own keypars with `php bin/console lexik:jwt:generate-keypair`
-11. Clear cache running `php bin/console cache:clear`
-12. 
+3. Execute the server running `symfony serve`
+4. Go to https://127.0.0.1:8000 for check if the platform are running
+5. Configure you database conection editing `.env` file, set your credentials in `DATABASE_URL` parameter
+6. Create database running `php bin/console doctrine:database:create`
+7. Create tables running `php bin/console doctrine:migrations:migrate` 
+8. Update Relations `php bin/console doctrine:schema:update --force`
+9. generate your own keypars with `php bin/console lexik:jwt:generate-keypair`
+10. Clear cache running `php bin/console cache:clear`
+ 
 
 ### Endpoints (import from Postman)
 
