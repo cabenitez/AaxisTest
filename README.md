@@ -1,9 +1,10 @@
 # AaxisTest (Challenge for Aaxis)
 ## Basic Technical Test (PHP Symfony Developer)
 
-[Definitions](https://github.com/cabenitez/AaxisTest/blob/main/PDF-php-symfony-test-2023-en.pdf)
+![Symfony Logo](/public/images/symfony.png "Symfony Framework v7.0")
+###### This project was developed with Symfony Framework v7.0
 
-![Symfony Logo](/public/images/symfony.png "This project was developed with Symfony Framework v7.0")
+[Definitions](https://github.com/cabenitez/AaxisTest/blob/main/PDF-php-symfony-test-2023-en.pdf)
 
 ### Requeriments 
 ```
