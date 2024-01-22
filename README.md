@@ -1,12 +1,14 @@
 # AaxisTest (Challenge for Aaxis)
 ## Basic Technical Test (PHP Symfony Developer)
 
+[Definitions](https://github.com/cabenitez/AaxisTest/blob/main/PDF-php-symfony-test-2023-en.pdf)
+
 ### Requeriments 
 ```
 php: >=8.2
 postgresql: >= 13.11
 ```
-> Enable `sodium` extension in you php.ini `extension=sodium`
+> Enable `sodium` extension in you *php.ini* file `extension=sodium`
 
 ### Installation
 1. Clone this repository with `git clone https://github.com/cabenitez/AaxisTest.git`
@@ -17,7 +19,7 @@ postgresql: >= 13.11
 6. Create database running `php bin/console doctrine:database:create`
 7. Create tables running `php bin/console doctrine:migrations:migrate` 
 8. Update Schema `php bin/console doctrine:schema:update --force`
-9. generate your keypars with `php bin/console lexik:jwt:generate-keypair`
+9. Generate your keypars with `php bin/console lexik:jwt:generate-keypair`
 10. Clear cache running `php bin/console cache:clear`
  
 
