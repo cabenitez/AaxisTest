@@ -30,3 +30,19 @@ postgresql: >= 13.11
 [Collection](https://api.postman.com/collections/997492-4c4567ce-92d8-4cdc-9920-3542c3a8bc6e?access_key=PMAT-01HMQMCEHRGPJV11NYHED38EY2)
 
 [Documentation](https://documenter.getpostman.com/view/997492/2s9YymH5Ce)
+
+
+### How to use (Step by Step)
+
+###### Create an user
+`/api/users/create`
+
+###### login the user (returns a token)
+`/api/login_check`
+
+###### Product management (requires previously generated token)
+`/api/products/load`
+`/api/products/update`
+`/api/products/list`
+
+> To use the token add it to the Request Authorization as type "Bearer Token" Token
