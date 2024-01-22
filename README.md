@@ -25,4 +25,4 @@ postgresql: >= 13.11
 
 [Collection](https://api.postman.com/collections/997492-4c4567ce-92d8-4cdc-9920-3542c3a8bc6e?access_key=PMAT-01HMQMCEHRGPJV11NYHED38EY2)
 
-[Documentation](https://documenter.getpostman.com/view/997492/2s9YymH53t)
+[Documentation](https://documenter.getpostman.com/view/997492/2s9YymH5Ce)
