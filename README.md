@@ -18,14 +18,11 @@ postgresql: >= 13.11
 8. Go to https://127.0.0.1:8000 for check if the platform are running
 9. Enable `sodium` extension in you php.ini `extension=sodium`
 10. generate your own keypars with `php bin/console lexik:jwt:generate-keypair`
-11. 
+11. Clear cache running `php bin/console cache:clear`
+12. 
 
-### Import endpoints from Postman
+### Endpoints (import from Postman)
+
 [Collection](https://api.postman.com/collections/997492-4c4567ce-92d8-4cdc-9920-3542c3a8bc6e?access_key=PMAT-01HMQMCEHRGPJV11NYHED38EY2)
 
-### Endpoints
-* User Create
-* User Login
-* Product Load
-* Product Update
-* Product List
+[Documentation](https://documenter.getpostman.com/view/997492/2s9YymH53t)
